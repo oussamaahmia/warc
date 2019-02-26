@@ -4,7 +4,7 @@ Provides support for ARC v1 files.
 :copyright: (c) 2012 Internet Archive
 """
 
-import builtin
+import builtins
 import datetime
 import os
 import re
