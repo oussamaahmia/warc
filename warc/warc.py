@@ -7,7 +7,7 @@ Python library to work with WARC files.
 :copyright: (c) 2012 Internet Archive
 """
 
-import builtins
+import builtins as __builtin__
 import datetime
 import uuid
 import logging
