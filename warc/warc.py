@@ -7,7 +7,7 @@ Python library to work with WARC files.
 :copyright: (c) 2012 Internet Archive
 """
 
-import builtins as __builtin__
+import builtins
 import datetime
 import uuid
 import logging
@@ -244,7 +244,7 @@ class WARCRecord(object):
 class WARCFile:
     def __init__(self, filename=None, mode=None, fileobj=None, compress=None):
         if fileobj is None:
-            fileobj = __builtin__.open(filename, mode or "rb")
+            fileobj = builtins.open(filename, mode or "rb")
             mode = fileobj.mode
         # initiaize compress based on filename, if not already specified
         if compress is None and filename and filename.endswith(".gz"):
