@@ -7,12 +7,12 @@ Python library to work with WARC files.
 :copyright: (c) 2012 Internet Archive
 """
 
-import __builtin__
+import builtins
 import datetime
 import uuid
 import logging
 import re
-from cStringIO import StringIO
+from io import StringIO
 import hashlib
 
 from . import gzip2
