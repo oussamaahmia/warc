@@ -8,7 +8,7 @@ import builtins
 import datetime
 import os
 import re
-import StringIO
+from io import StringIO
 import warnings
 
 from .utils import CaseInsensitiveDict
