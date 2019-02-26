@@ -7,7 +7,7 @@ This file is part of warc
 :copyright: (c) 2012 Internet Archive
 """
 
-from UserDict import DictMixin
+from collections import MutableMapping as DictMixin
 
 class CaseInsensitiveDict(DictMixin):
     """Almost like a dictionary, but keys are case-insensitive.
